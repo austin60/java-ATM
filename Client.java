@@ -5,7 +5,7 @@ public class Client {
 HashMap<Integer,Integer> userCred=new HashMap<>();
 Menu menu=new Menu();
 //variable declaration
- int total=0;
+ //int total=0;
 //login credentials
    void credentials(){
       userCred.put(1234,123456);
@@ -25,8 +25,6 @@ Menu menu=new Menu();
        }
        else{
         menu.basicMenu();
-       // menu.navigate();
-       // System.out.println("Success");
        }
     }
     //if userid is not recorded
@@ -35,22 +33,7 @@ Menu menu=new Menu();
     }
   }
 
-  void checkBalance(){
-    System.out.println("Current balance : " + total);
-  }
-
-  int withdraw(int amnt){
-    return total-amnt; 
-  }
-
-  int deposit(int amnt){
-    return total+amnt;
-  }
-
-  void exit(){
-    Menu menu=new Menu();
-    menu.basicMenu();
-  }
+ 
 
 
 }
